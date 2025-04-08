@@ -12,7 +12,6 @@ import { MaterialModule } from './modules/material.module';
 @NgModule({
   declarations: [
     AppComponent,
-    DepartmentsComponent,
     TimesheetComponent,
     AnalyticsComponent,
     TopNavbarComponent,
@@ -20,6 +19,7 @@ import { MaterialModule } from './modules/material.module';
   ],
   imports: [
     BrowserModule,
+    DepartmentsComponent,
     AppRoutingModule,
     MaterialModule
   ],
