@@ -1,3 +1,6 @@
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './modules/app-routing.module';
@@ -25,7 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
