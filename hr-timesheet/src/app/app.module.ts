@@ -10,6 +10,7 @@ import { AnalyticsTableComponent } from './components/analytics-table/analytics-
 import { MaterialModule } from './modules/material.module';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
